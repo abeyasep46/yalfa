@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yayasan Al-Falah Cikelet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+  body{background:#f3f7f4;color:#1b1b1b;}
+  header{
+    background:linear-gradient(135deg,#0e7b34,#0fb14a);
+    color:#fff;
+    padding:20px 0;
+    position:sticky;top:0;z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  }
+  nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;}
+  nav .logo{font-size:1.5rem;font-weight:700;letter-spacing:1px;}
+  nav ul{display:flex;gap:25px;list-style:none;}
+  nav ul li a{color:#fff;font-weight:500;text-decoration:none;transition:.3s;}
+  nav ul li a:hover{opacity:.7;}
+
+  .hero{
+    background:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=60');
+    background-size:cover;background-position:center;
+    padding:120px 20px;text-align:center;color:#000000;
+  }
+  .hero h1{font-size:2.4rem;font-weight:700;text-shadow:0 3px 6px rgba(0,0,0,0.4);}
+  .hero p{max-width:700px;margin:15px auto;font-size:1rem;opacity:.9;}
+  .btn-primary{
+    display:inline-block;margin-top:15px;padding:12px 24px;
+    background:#5970ee;color:#000000;border-radius:8px;font-weight:600;
+    text-decoration:none;transition:.3s;
+  }
+  .btn-primary:hover{background:#e3ffe9;}
+
+  section{max-width:1200px;margin:50px auto;padding:0 20px;}
+  .title{font-size:1.8rem;font-weight:700;color:#0e6630;margin-bottom:15px;text-align:center;}
+  .sub{color:#555;text-align:center;margin-bottom:30px;}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .card{
+    background:#fff;padding:20px;border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+  }
+  .card:hover{transform:translateY(-5px);box-shadow:0 12px 20px rgba(0,0,0,0.12);}  
+  .card h3{color:#0e7b34;margin-bottom:10px;font-size:1.2rem;}
+  .card p{font-size:.95rem;color:#444;}
+
+  .contact-box{display:grid;grid-template-columns:1fr 1fr;gap:25px;}
+  .contact-form input,.contact-form textarea{
+    width:100%;padding:12px;border-radius:8px;border:1px solid #cfcfcf;margin-bottom:12px;font-size:.95rem;
+  }
+  .contact-form button{
+    padding:12px;background:#0e7b34;color:#fff;border:0;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;
+  }
+  .contact-form button:hover{background:#0fb14a;}
+
+  footer{
+    background:#0c5529;color:#dfffe8;padding:25px 20px;margin-top:40px;
+  }
+  footer .foot{max-width:1200px;margin:auto;text-align:center;font-size:.9rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Yayasan Al-Falah Cikelet</div>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h1>Yayasan Al Falah Cikelet</h1>
+  <p>Menyelenggarakan pendidikan bermutu dari tingkat KB, MI, hingga MA dengan lingkungan pendidikan yang religius, modern, dan berkarakter.</p>
+  <a href="#program" class="btn-primary">Lihat Program Pendidikan</a>
+</div>
+
+<section id="program">
+  <h2 class="title">Program Pendidikan</h2>
+  <p class="sub">Yayasan Al-Falah Cikelet memiliki unit pendidikan lengkap untuk membina generasi unggul dan berakhlak.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>KB Uswatun Hasanah</h3>
+      <p>Pendidikan anak usia dini dengan pendekatan Islami, bermain sambil belajar, dan pembentukan karakter.</p>
+    </div>
+
+    <div class="card">
+      <h3>MI Al Falah</h3>
+      <p>Madrasah Ibtidaiyah dengan kurikulum terpadu Agama dan Umum untuk membangun kecerdasan intelektual dan spiritual.</p>
+    </div>
+
+    <div class="card">
+      <h3>MTs Al Falah</h3>
+      <p>Pendidikan tingkat menengah berbasis kurikulum Kemenag yang fokus pada akademik, akhlak, dan teknologi.</p>
+    </div>
+
+    <div class="card">
+      <h3>MA Al Falah Cikelet</h3>
+      <p>Pendidikan menengah atas dengan jurusan keagamaan dan umum, membentuk lulusan kompeten dan siap melanjutkan studi.</p>
+    </div>
+  </div>
+</section>
+
+<section id="profil">
+  <h2 class="title">Profil Yayasan</h2>
+  <p class="sub">Lokasi & informasi resmi Yayasan Al Falah Cikelet</p>
+
+  <div class="card" style="max-width:800px;margin:auto;text-align:center;">
+    <h3 style="margin-bottom:10px;">Lokasi Yayasan</h3>
+    <p>Kp. Linggamanik RT.002 RW.009, Desa Linggamanik, Kecamatan Cikelet, Kabupaten Garut</p>
+  </div>
+</section>
+
+<section id="kontak">
+  <h2 class="title">Kontak Kami</h2>
+  <div class="contact-box">
+
+    <div class="card">
+      <h3>Informasi Kontak</h3>
+      <p><strong>Alamat:</strong> Kp. Linggamanik RT.002 RW.009, Desa Linggamanik, Kec. Cikelet, Kab. Garut</p>
+      <p><strong>Email:</strong> yayasanafalahcikelet@gmail.com</p>
+      <p><strong>Telepon:</strong> 0812-3456-7890</p>
+    </div>
+
+    <div class="card contact-form">
+      <h3>Kirim Pesan</h3>
+      <input type="text" placeholder="Nama" />
+      <input type="email" placeholder="Email" />
+      <textarea rows="4" placeholder="Pesan"></textarea>
+      <button>Kirim</button>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="foot">© 2025 Yayasan Al Falah Cikelet • Asep Purnama</div>
+</footer>
+
+</body>
+</html>
